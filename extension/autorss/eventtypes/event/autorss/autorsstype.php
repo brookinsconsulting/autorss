@@ -1,9 +1,9 @@
 <?php
 //
 // ## BEGIN COPYRIGHT, LICENSE AND WARRANTY NOTICE ##
-// SOFTWARE NAME: eZ publish Auto RSS extension
-// SOFTWARE RELEASE: 0.x
-// COPYRIGHT NOTICE: Copyright (C) 2007 Kristof Coomans <http://blog.kristofcoomans.be>
+// SOFTWARE NAME: eZ Publish Auto RSS extension
+// SOFTWARE RELEASE: 1.x
+// COPYRIGHT NOTICE: Copyright (C) 2007-2008 Kristof Coomans <http://blog.kristofcoomans.be>
 // SOFTWARE LICENSE: GNU General Public License v2.0
 // NOTICE: >
 //   This program is free software; you can redistribute it and/or
