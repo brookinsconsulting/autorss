@@ -41,12 +41,21 @@ $params = array(
     'Limitation' => array()
 );
 
+$script->setIterationData( '.', '~' );
+
 $nodes =& eZContentObjectTreeNode::subtree( $params, 1 );
 
 include_once( 'extension/autorss/eventtypes/event/autorss/autorsstype.php' );
+$nodeCount = count( $nodes );
+$script->resetIteration( $nodeCount );
+$cli->output( '' );
+$cli->output( "Found $nodeCount nodes to investigate." );
+$cli->output( '' );
+
 foreach ( $nodes as $node )
 {
-    AutoRSSType::createFeedIfNeeded( $node, $args, $pathOffset );
+    $result = AutoRSSType::createFeedIfNeeded( $node, $args, $pathOffset );
+    $script->iterate( $cli, $result );
 }
 
 $script->shutdown( 0 );

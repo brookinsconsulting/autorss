@@ -206,6 +206,8 @@ class AutoRSSType extends eZWorkflowEventType
         $rssExport->store( true );
         // remove draft
         $rssExport->remove();
+
+        return true;
     }
 }
 
